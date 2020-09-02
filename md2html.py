@@ -3,10 +3,17 @@ import os
 import io
 
 
+try:
+    os.remove("index.html")
+except:
+    print("cleaned index.html")
+
+
 def process(file):
     bruh = file
     processing = bruh.replace("# ", "<h1>").replace(
-        "#<h1>", "<h2>").replace("/#", "</h1>")
+        "#<h1>", "<h2>").replace("/#", "</h1>").replace("</h1>#", "</h2>")
+
     return processing
 
 
