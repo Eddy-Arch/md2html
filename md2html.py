@@ -11,8 +11,8 @@ except:
 
 def process(file):
     bruh = file
-    processing = bruh.replace("# ", "<h1>").replace(
-        "#<h1>", "<h2>").replace("/#", "</h1>").replace("</h1>#", "</h2>")
+    processing = bruh.replace("/#b", "</body>").replace("# ", "<h1>").replace(
+        "#<h1>", "<h2>").replace("#<h3>", "<h4>").replace("#<h2>", "<h3>").replace("/#", "</h1>").replace("</h1>#", "</h2>").replace("</h2>#", "<h3>").replace("#b", " <body>")
 
     return processing
 
